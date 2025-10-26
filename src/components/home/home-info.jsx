@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import avatar from "../../Assets/avatar.svg";
 
 function HomeInfo() {
   return (
@@ -10,47 +9,33 @@ function HomeInfo() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
-              <br />
-              <br />
-              I’m proficient in
+              I’m currently a junior{" "}
+              <span className="blue">Computer Science</span> student at {" "}
+              <span className="blue">DePauw University</span>.
+              <br/>
+              <br/>
+              I'm going to {" "}
+              <span className="blue">Grace Hopper Conference</span> this {" "}
+              <span className="blue">November</span>. Love to meet up and connect!
+              <br/>
+              <br/>
+              I'm proficient in
               <i>
-                <b className="purple">
+                <b className="blue">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript, Java, Vue.js, and Node.js{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — and I'm exploring frontend and mobile development.
               <br />
               <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={4} className="myAvatar">
+            <img src={avatar} className="img-fluid rounded-circle" alt="avatar" />
           </Col>
         </Row>
       </Container>

@@ -3,7 +3,7 @@ import Preloader from "./components/preload";
 import Navbar from "./components/navbar.jsx";
 import Home from "./components/home/home";
 import About from "./components/about/about.jsx";
-// import Projects from "./components/projects/projects.jsx";
+// import Experience from "./components/experience/experience.jsx";
 import Footer from "./components/footer.jsx";
 import Resume from "./components/resume/resume.jsx";
 
@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/resume" element={<Resume/>}/>
-          {/* <Route path="/project" element={<Projects/>}/> */}
+          {/* <Route path="/experience" element={<Experience/>}/> */}
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

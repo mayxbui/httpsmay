@@ -1,30 +1,30 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    #181c28,
+    #101b3b
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    #181c28,
+    #101b3b
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #0081FB;
 }
 
 h1{
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 h2{
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 h3{
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
-.purple {
+.blue {
   color: var(--imp-text-color) !important;
 }
 
@@ -42,7 +42,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #181c28;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -72,18 +72,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #181c28;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #181c40;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #0081FB;
   border-radius: 12px;
 }
 
@@ -112,7 +112,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #0081FB !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -129,7 +129,6 @@ button:focus {
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
   transition: transform 0.35s ease-in-out !important;
 }
 
@@ -184,6 +183,10 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
+.custom-toggle{
+    scale: 80%;
+}
+
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
@@ -209,7 +212,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #0081FB;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -280,9 +283,19 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 7rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.home-img{
+  padding-top: 4em !important;
+}
+
+.home-img .img-thumbnail {
+  background-color: #0081FB !important;
+  border: none;
+  border-radius: 0.25rem;
 }
 
 .heading {
@@ -290,29 +303,20 @@ button:focus {
   padding-left: 50px !important;
 }
 
-.heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
-}
-
-.main-name {
-  color: #cd5ff8;
-}
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 400 !important;
+  color: #0081FB !important;
+  font-weight: 300 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #1e4972 !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
-    font-weight: 300 !important;
     position: absolute !important;
   }
   .Typewriter__cursor {
@@ -320,15 +324,22 @@ button:focus {
   }
 }
 
-.myAvtar {
+.myAvatar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 2em !important;
+  object-fit: cover;
+}
+
+img:hover {
+  color: #0081FB;
+  box-shadow: 0 0 30px 5px #0081FB;
+  transition: box-shadow 0.4s ease;
 }
 
 @media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
+  .myAvatar {
+    padding-top: 1em !important;
+    padding-bottom: 9em !important;
   }
 }
 
@@ -387,7 +398,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #101b3b;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -395,13 +406,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #0081FB;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #0081FB;
+  box-shadow: 0 0 5px #0081FB;
+  text-shadow: 0 0 2px #0081FB;
 }
 
 .social-icons {
@@ -410,15 +421,15 @@ button:focus {
   padding-left: 15px;
 }
 
-.icon-colour {
-  color: #700c86 !important;
+.icon-color {
+  color: #0081FB !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #181c28;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -455,19 +466,19 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #8cbeed !important;
 }
 /* --------- */
-/* Projects */
+/* Experience */
 /* --------- */
-.project-section {
+.experience-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
 
-.project-card {
+.experience-info {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
@@ -475,74 +486,33 @@ button:focus {
   height: auto !important;
 }
 
-.project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+.experience-info-view {
+  box-shadow: 0 4px 5px 3px #101b3b !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
-.project-card-view:hover {
+.experience-info-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
-.card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
+  box-shadow: 0 4px 4px 5px #101b3b !important;
 }
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #0081FB !important;
+  border-color: #0081FB !important;
+  box-shadow:0 0 5px #0081FB;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  box-shadow:0 0 20px 5px #0081FB;
+  transition: box-shadow 0.4s ease;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -575,16 +545,16 @@ button:focus {
   height: 38px;
   width: fit-content !important;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.05));
+  filter: drop-shadow(0 0 3px #1e4972);
   margin: 15px !important;
   padding: 10px 20px !important;
   opacity: 0.93 !important;
-  outline: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  outline: 1.7px solid #1e4972 !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 24px !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  box-shadow: 0px 0px 10px rgba(120, 60, 255, 0.15);
+  box-shadow: 1px 2px 4px 3px #101b3b !important;
+  box-shadow: 0px 0px 10px #101b3b;
   overflow: hidden !important;
   /* transition: all 0.4s ease 0s !important; */
   cursor: pointer !important;
@@ -609,14 +579,14 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  outline: 2.2px solid #0081FB !important;
 }
 .tech-icon-images {
   height: 1.6rem;
   line-height: 1.6 !important;
 }
 
-.quote-card-view {
+.quote-info-view {
   border: none !important;
   color: white !important;
   background-color: transparent !important;
@@ -627,6 +597,9 @@ button:focus {
   text-align: left !important;
   padding-left: 1px !important;
 }
+.about-img {
+    padding-top: 3em !important;
+  }
 
 @media (max-width: 767px) {
   .about-img {
@@ -680,14 +653,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #0081FB;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #181c28;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -717,7 +690,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #8a49a8;
+  border: 2px solid #0081FB;
 }
 
 .like-item {
@@ -727,8 +700,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: #101b3b !important;
+  border-color: #1e4972 !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -737,8 +710,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #1e4972 !important;
+  border-color: #101b3b !important;
 }
 
 .animate-like {
@@ -753,26 +726,4 @@ button:focus {
   100% {
     transform: scale(1);
   }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }

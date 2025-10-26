@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import AboutInfo from "./about-info";
 import TechStack from "../about/tech-stack.jsx";
 // import Particles from "../Particle";
-import laptopImg from "../../assets/about.png";
+import godfather from "../../assets/godfather.svg";
 
 
 function About(){
@@ -32,9 +32,9 @@ function About(){
                             paddingTop:"30px",
                             paddingBottom:"50px",
                         }}>
-                        <h1 style={{fontSize:"2.1em", paddingBottom:"20px"}}>
-                            Hi there, my name is <strong className="purple">May Bui</strong>
-                        </h1>
+                        <h2 style={{fontSize:"2.1em", paddingBottom:"20px"}}>
+                            More About <strong className="blue">Me</strong>
+                        </h2>
                         <AboutInfo/>
                     </Col>
                     <Col
@@ -42,11 +42,14 @@ function About(){
                         style={{ paddingTop: "120px", paddingBottom: "50px" }}
                         className="about-img"
                         >
-                        <img src={laptopImg} alt="about" className = "img-fluid"/>
+                        <img src={godfather} className="img-fluid rounded" alt="Vito Corleone, The Godfather" style={{
+                            width: "80%",
+                            maxWidth: "400px",
+                            height: "auto"}}/>
                     </Col>
                 </Row>
                 <h1 className="project-heading">
-                    Professional <strong className="purple">Skillsets</strong>
+                    Professional <strong className="blue">Skillsets</strong>
                 </h1>
                 <TechStack/>
             </Container>
