@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import welcome from "../../Assets/welcome.gif";
+import welcome from "../../assets/welcome.gif";
 // import Particle from "../Particle";
 import HomeInfo from "./home-info";
 import Type from "./typewriter";

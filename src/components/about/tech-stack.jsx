@@ -1,16 +1,16 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.js.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
+import Javascript from "../../assets/TechIcons/Javascript.svg";
+import Node from "../../assets/TechIcons/Node.js.svg";
+import ReactIcon from "../../assets/TechIcons/React.svg";
 import ReactBootstrap from "../../assets/TechIcons/ReactBootstrap.svg";
-import Vue from "../../Assets/TechIcons/Vue.js.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
-import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import SQLite from "../../Assets/TechIcons/SQLite.svg";
-import Mongo from "../../Assets/TechIcons/MongoDB.svg";
-import PostgreSQL from "../../Assets/TechIcons/PostgresSQL.svg";
+import Vue from "../../assets/TechIcons/Vue.js.svg";
+import Java from "../../assets/TechIcons/Java.svg";
+import Python from "../../assets/TechIcons/Python.svg";
+import Typescript from "../../assets/TechIcons/Typescript.svg";
+import SQLite from "../../assets/TechIcons/SQLite.svg";
+import Mongo from "../../assets/TechIcons/MongoDB.svg";
+import PostgreSQL from "../../assets/TechIcons/PostgresSQL.svg";
 
 function TechStack() {
   return (

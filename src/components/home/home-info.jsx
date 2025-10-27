@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import avatar from "../../Assets/avatar.svg";
+import avatar from "../../assets/avatar.svg";
 
 function HomeInfo() {
   return (

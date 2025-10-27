@@ -14,7 +14,7 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <IoIosArrowForward /> Watching sitcom comedy show and drinking boba and 🧋
+              <IoIosArrowForward /> Watching sitcom comedy show and drinking boba 🧋
             </li>
             <li className="about-activity">
               <IoIosArrowForward /> Crafting gifts for my loved ones 🖍️
