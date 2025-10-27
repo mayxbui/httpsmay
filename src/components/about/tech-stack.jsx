@@ -1,13 +1,13 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
-import Javascript from "../../assets/TechIcons/Javascript.svg";
+import JavaScript from "../../assets/TechIcons/JavaScript.svg";
 import Node from "../../assets/TechIcons/Node.js.svg";
 import ReactIcon from "../../assets/TechIcons/React.svg";
 import ReactBootstrap from "../../assets/TechIcons/ReactBootstrap.svg";
 import Vue from "../../assets/TechIcons/Vue.js.svg";
 import Java from "../../assets/TechIcons/Java.svg";
 import Python from "../../assets/TechIcons/Python.svg";
-import Typescript from "../../assets/TechIcons/Typescript.svg";
+import TypeScript from "../../assets/TechIcons/TypeScript.svg";
 import SQLite from "../../assets/TechIcons/SQLite.svg";
 import Mongo from "../../assets/TechIcons/MongoDB.svg";
 import PostgreSQL from "../../assets/TechIcons/PostgresSQL.svg";
@@ -20,16 +20,16 @@ function TechStack() {
         <div className="tech-icons-text">Java</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="Javascript" />
-        <div className="tech-icons-text">Javascript</div>
+        <img src={JavaScript} alt="JavaScript" />
+        <div className="tech-icons-text">JavaScript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Python} alt="Python" />
         <div className="tech-icons-text">Python</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="Typescript" />
-        <div className="tech-icons-text">Javascript</div>
+        <img src={TypeScript} alt="TypeScript" />
+        <div className="tech-icons-text">TypeScript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Node} alt="Node" />
