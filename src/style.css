@@ -330,7 +330,6 @@ button:focus {
 }
 
 img:hover {
-  color: #0081FB;
   box-shadow: 0 0 30px 5px #0081FB;
   transition: box-shadow 0.4s ease;
 }

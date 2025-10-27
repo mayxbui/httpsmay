@@ -48,10 +48,14 @@ function About(){
                             height: "auto"}}/>
                     </Col>
                 </Row>
+                <br/>
+                <br/>
                 <h1 className="project-heading">
                     Professional <strong className="blue">Skillsets</strong>
                 </h1>
                 <TechStack/>
+                <br/>
+                <br/>
             </Container>
         </Container>
         </>
