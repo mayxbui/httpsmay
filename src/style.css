@@ -435,7 +435,7 @@ img:hover {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: #181c28;
+  background-color: transparent;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
