@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
-import Preloader from "./components/preload";
+import Preload from "./components/preload.jsx";
 import Navbar from "./components/navbar.jsx";
-import Home from "./components/home/home";
+import Home from "./components/home/home.jsx";
 import About from "./components/about/about.jsx";
-// import Experience from "./components/experience/experience.jsx";
+import Experience from "./components/experience/experience.jsx";
+import Projects from "./components/projects/projects.jsx"
 import Footer from "./components/footer.jsx";
 import Resume from "./components/resume/resume.jsx";
 
@@ -32,14 +33,15 @@ function App() {
 
   return(
     <Router>
-      <Preloader load={load}/>
+      <Preload load={load}/>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar/>
         <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/resume" element={<Resume/>}/>
-          {/* <Route path="/experience" element={<Experience/>}/> */}
+          <Route path="/project" element={<Projects/>}/>
+          <Route path="/experience" element={<Experience/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

@@ -7,6 +7,7 @@ import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 import pdfFile from "../../assets/resume.pdf";
 import pdfWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
+import Particles from "../particle.jsx"
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
@@ -19,6 +20,7 @@ function Resume() {
 
   return (
     <Container fluid className="resume-section">
+      <Particles/>
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Button
           variant="primary"

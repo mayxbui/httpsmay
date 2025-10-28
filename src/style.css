@@ -36,29 +36,35 @@ button:focus {
 /*  Preloader */
 /* --------- */
 #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 999999;
+  width: 100%;
+  height: 100vh;
   background-color: #181c28;
   background-repeat: no-repeat;
   background-position: center;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+
 }
 
 #preloader-none {
   opacity: 0;
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-/* #preloader-none {
-  opacity: 0;
-  display: none;
-} */
+.preloader-image {
+  height: 40px;
+  width: auto;
+  animation: spin 1.4s linear infinite;
+  box-shadow: none;
+}
 
 #no-scroll {
   overflow: hidden;
-  height: 100vh;
 }
 
 /* --------- */
@@ -259,13 +265,15 @@ button:focus {
     transform: rotate(0deg);
   }
 }
-/* #tsparticles {
+
+.particles-container {
   position: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   width: 100%;
   height: 100%;
-} */
+}
+
 
 .home-header {
   padding-top: 80px !important;

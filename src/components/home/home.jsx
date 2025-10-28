@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import welcome from "../../assets/welcome.gif";
-// import Particle from "../Particle";
+import Particle from "../particle.jsx";
 import HomeInfo from "./home-info";
 import Type from "./typewriter";
 import {
@@ -13,7 +13,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        {/* <Particle /> */}
+        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">

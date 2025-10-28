@@ -47,6 +47,7 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -65,7 +66,15 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/"
+                onClick={() => updateExpanded(false)}
+              >Projects</Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/"
                 onClick={() => updateExpanded(false)}
               >Experience</Nav.Link>
             </Nav.Item>

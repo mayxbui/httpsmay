@@ -11,7 +11,7 @@ import a from "../../assets/welcome.gif"
 // import suicide from "../../assets/projects/suicide.png";
 // import bitsOfCode from "../../assets/projects/blog.png";
 
-function Experience() {
+function projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -95,4 +95,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default projects;

@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { Renderer, Camera, Geometry, Program, Mesh } from 'ogl';
 
-import '../components/particle.css';
+import '../style.css';
 
-const defaultColors = ['#ffffff', '#ffffff', '#ffffff'];
+const defaultColors = ['#a7d2f9ff']
 
 const hexToRgb = hex => {
   hex = hex.replace(/^#/, '');
@@ -93,7 +93,7 @@ const Particles = ({
   moveParticlesOnHover = false,
   particleHoverFactor = 1,
   alphaParticles = false,
-  particleBaseSize = 100,
+  particleBaseSize = 50,
   sizeRandomness = 1,
   cameraDistance = 20,
   disableRotation = false,
